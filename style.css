@@ -1,0 +1,37 @@
+.task1-grid-wraper{
+    
+    gap: 1em;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "Header Header"
+                         "Sidebar Main"
+                          "Footer Footer";
+    
+}
+h2,p{
+    padding-left: 1rem;
+}
+.task1-grid-wraper>*{
+    background-color: #444;
+}
+
+.head{
+    grid-area: "Header";
+    grid-column: 1/-1;
+    text-align: center;
+}
+.aside{
+    grid-area: "Sidebar";
+    
+    
+}
+.main{
+    grid-area: "Main";
+}
+.footer{
+    grid-area: "Footer";
+    text-align: center;
+    grid-column: 1/-1;
+    
+}
+
