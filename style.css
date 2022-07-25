@@ -34,4 +34,13 @@ h2,p{
     grid-column: 1/-1;
     
 }
-
+/* Responsive header, two columns and a footer */
+@media (max-width:640px){
+    .task1-grid-wraper{
+    grid-template-columns: 1fr ;
+    grid-template-areas: "Header "
+                         "Sidebar "
+                         "Main"
+                          "Footer";
+}
+}
