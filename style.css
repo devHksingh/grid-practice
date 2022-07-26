@@ -44,9 +44,12 @@ h2,p{
                           "Footer";
 }
 }
+h1, p {
+    margin: 0 0 1em 0;
+  }
 .task-2-wrapper{
     display: grid;
-    width: 100vw;
+    width: 97vw;
     height: 100vh;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: 1.4fr 3.5fr repeat(4,2.5fr) 1.4fr;
@@ -55,6 +58,10 @@ h2,p{
 }
 .task-2-wrapper>*{
     background-color: #444;
+    color: rgb(219, 198, 198);
+    border-radius: 5px;
+    font-size: 140%;
+    padding: 20px;
 }
 
 .task-2-header{
@@ -63,11 +70,27 @@ h2,p{
 .task-2-content{
     grid-column: 1/span 2;
     grid-row: 2/ 4;
-    padding: 2rem;
+    text-align: justify;
+    /* padding: 2rem; */
 }
 .block-a{
     grid-row: 4/6;
-    padding: 2rem;
+    /* padding: 2rem; */
     font-weight: 700;
 
+}
+.block-b{
+    grid-row: -4/-3;
+    /* padding: 2rem; */
+    font-weight: 700;
+}
+.block-c{
+    grid-row: 6/7;
+    grid-column: 1/span 2;
+    /* padding: 2rem; */
+    font-weight: 700;
+}
+.task-2-footer{
+    grid-row: 7/8;
+    grid-column: 1/span 2;
 }
